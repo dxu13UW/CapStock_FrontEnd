@@ -21,7 +21,7 @@ Goes to localhost:5173. Backend needs to be running in Docker for this to actual
 ## TODO / things to check
 
 - Channel topic was changed from `stocks:live` to `stocks:broadcasts` based on SRS Appendix C - still needs confirming against the actual `stock_channel.ex`
-- `historical_data` response shape is assumed to be `{ ticker, prices }` - not confirmed against backend
+- Remove all functionalities regarding `historical_data` and `request_historical_data` as it is outdated, and `intraday` is used instead to request data through websocket.
 
 ## Files
 
